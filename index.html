@@ -1,20 +1,5 @@
 <!DOCTYPE html>
-<!--
-  index.html — Página principal del sitio web
-  Módulo: Mantenimiento y Aseguramiento de la Operación del Sistema Informático
-  Autor: Estudiante
-  Fecha: 2026
-
-  ESTRUCTURA:
-    <head>  → Metadatos, enlace a CSS, título de la pestaña
-    <body>  → Todo el contenido visible:
-                <nav>     → Barra de navegación
-                <header>  → Sección hero / portada
-                <main>    → Contenido principal (secciones)
-                <footer>  → Pie de página
--->
 <html lang="es">
-
 <head>
   <!-- charset: soporta acentos, ñ y emojis con UTF-8 -->
   <meta charset="UTF-8">
@@ -34,23 +19,20 @@
 
 <body>
 
-  <!-- ============================================================
-       NAV — Barra de Navegación
-       href="#id" desplaza la página hasta la sección con ese id.
-       scroll-behavior: smooth (en CSS) hace la animación suave.
-       ============================================================ -->
+
   <nav>
     <div class="nav-inner">
 
       <!-- Logo: enlace que lleva al inicio de la página -->
-      <a href="#inicio" class="nav-logo"></a>
+      <a href="#inicio"> </a>
 
-      <!-- Botón ☰ hamburguesa para móvil — llama a toggleMenu() en JS -->
+      <!-============================================================
+       Botón de barra de Navegación, para poder ubicarse con la información de
+       la pagina como inicio, tipos, procedimiento y buenas practicas
+       ============================================================>
       <button class="nav-toggle" onclick="toggleMenu()" aria-label="Abrir menú">☰</button>
 
-      <!-- ul: lista de enlaces del menú
-           li: cada ítem   |   a: el enlace en sí
-           onclick="cerrarMenu()" cierra el menú al hacer clic en móvil -->
+      <!-- lista de enlaces del menú -->
       <ul class="nav-links" id="nav-links">
         <li><a href="#inicio"           onclick="cerrarMenu()">Inicio</a></li>
         <li><a href="#tipos"            onclick="cerrarMenu()">Tipos</a></li>
@@ -63,45 +45,39 @@
 
 
   <!-- ============================================================
-       HEADER / HERO — Portada principal
-       id="inicio" es el ancla del primer link del menú.
-       ============================================================ -->
+        Portada principal de la pagina osea adonde es el borde azulado
+   ============================================================ -->
   <header class="hero" id="inicio">
 
 
-    <!-- h1: título más importante de la página (solo uno por página) -->
+    <!-- título de la página web -->
     <h1>Mantenimiento y Aseguramiento<br>del Sistema Informático</h1>
 
   </header>
 
 
   <!-- ============================================================
-       MAIN — Contenido principal
-       Cada <section> tiene un id único usado como ancla del menú.
+        Contenido principal de la página web
        ============================================================ -->
   <main>
     <div class="contenedor">
 
 
-      <!-- --------------------------------------------------------
-           SECCIÓN 1 — DEFINICIÓN
-           id="definicion" → href="#definicion" en el nav
-           -------------------------------------------------------- -->
+  <!-- --------------------------------------------------------
+            Este es el primer contenido de la página
+          
+   -------------------------------------------------------- -->
       <section id="definicion">
         <h2 class="seccion-titulo">¿Qué es el Mantenimiento del Sistema?</h2>
-
 
         <p>El <strong>mantenimiento y aseguramiento de la operación del sistema informático</strong>
            comprende todas las actividades técnicas, preventivas y correctivas que garantizan
            el funcionamiento continuo, seguro y óptimo de los equipos de cómputo, software
            y redes de una organización.</p>
-
-        <br>
+            <br>
 
         <!-- .grid-cards distribuye tarjetas automáticamente con CSS Grid -->
         <div class="grid-cards">
-
-          
 
         
           </div>
